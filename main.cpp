@@ -11,13 +11,15 @@ HWND get_wallpaper_window();
 
 int main(int argc, char **argv)
 {
-    if (argc < 2)
-    {
+    cmd = new char[1024];
+    if(argc == 2)
+        sprintf(cmd, "ffplay %s -loop 0 -loglevel quiet", argv[1]);
+    else if(argc < 2){
         cerr << "This Program Receive a Filename(Video) as Param." << endl;
         return -1;
+    }else{
+        sprintf(cmd, "ffplay %s %s -loop 0 -loglevel quiet", argv[2], argv[1]);
     }
-    cmd = new char[1024];
-    sprintf(cmd, "ffplay %s -loop 0 -loglevel quiet", argv[1]);
     thread t(startVideo);
     ::Sleep(1000);
     HWND ffplay = nullptr;
