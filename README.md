@@ -16,4 +16,4 @@ wallper-video.exe <Filename>
 Just run ffplay and use the window as a child window of the desktop wallpaper.
 
 ### Bug
-When terminate the program, it pmay not switch back to the original wallpaper, you can restart explorer.exe to fix this bug.
+When terminate the program, it may not switch back to the original wallpaper, you can restart explorer.exe to fix this bug.
