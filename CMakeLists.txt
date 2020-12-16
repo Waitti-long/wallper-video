@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(wallp VERSION 0.1.0)
+project(wallper-video VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
 
-add_executable(wallp main.cpp)
+add_executable(wallper-video main.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
