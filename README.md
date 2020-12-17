@@ -9,7 +9,7 @@
 
 ```sh
 # g++ main.cpp -o wallper-video.exe
-wallper-video.exe <Filename> [ffplay arguments] # ffplay arhuments is the ffplay argument, you can use it to specify video size like 1920x1080.
+wallper-video.exe <Filename> [ffplay arguments] # ffplay arguments is the ffplay argument, you can use it to specify video size like 1920x1080.
 # sample
 wallper-video.exe sample.mp4
 wallper-video.exe sample.rgb "-video_size 1920x1080"
